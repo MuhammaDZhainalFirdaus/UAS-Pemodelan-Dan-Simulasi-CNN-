@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagnosis Penyakit Sawit</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>🌿 Diagnosis Penyakit Sawit 🌿</h1>
+        <p>Unggah gambar daun sawit untuk mendapatkan hasil diagnosis.</p>
+        <label for="imageInput" class="custom-file-upload">Pilih Gambar</label>
+        <input type="file" id="imageInput" accept="image/*">
+        <img id="imagePreview" class="hidden" alt="Preview">
+        <button onclick="diagnose()">🔍 Diagnosa</button>
+        <p id="result"></p>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
